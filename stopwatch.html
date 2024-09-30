@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body,
+        jumbotron {
+            padding: 30px;
+        }
+
+        .timer {
+            font-size: 120px;
+        }
+    </style>
+    <script src="stopwatch.js" defer></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+
+        <!--Timer-->
+        <div class="timer">
+            <span class="minutes">00</span> : <span class="seconds">00</span>
+        </div>
+
+        <!--timer buttons-->
+        <div class="timer-buttons">
+            <button class="btn btn-lg btn-success" data-action="start">
+                Start
+            </button>
+            <button class="btn btn-lg btn-danger" data-action="stop">
+                Stop
+            </button>
+            <button class="btn btn-link btn-block" data-action="reset">
+                Reset
+            </button>
+        </div>
+    </div>
+    
+    <!-- <script>
+        const buttons = document.querySelectorAll('button[data-action]');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const action = this.getAttribute('data-action');
+                if (action === 'start') {
+                    intervalId = startTimer();
+                    console.log('Start button clicked');
+                } else if (action === 'stop') {
+                    stopTimer(intervalId);
+                    console.log('Stop button clicked');
+                } else if (action === 'reset') {
+                    resetTimer();
+                    console.log('Reset button clicked');
+                }
+            });
+        });
+    </script> -->
+
+</body>
+
+</html>
